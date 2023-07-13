@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Name</title>
+</head>
+<body>
+  <h1>Hello, <span id="name"></span>!</h1>
+
+  <script>
+    // Get the name from the query parameter or set a default name
+    const name = new URLSearchParams(window.location.search).get('name') || 'Guest';
+
+    // Set the name in the HTML element
+    document.getElementById('name').textContent = name;
+  </script>
+</body>
+</html>
