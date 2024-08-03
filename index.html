@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - S A I K R I S H N A K</title>
+    <title>Resume - SAI KRISHNA K</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -48,22 +48,79 @@
             background-color: #e6f7ff;
             transition: background-color 0.3s;
         }
-        .expertise-list, .certificate-list {
+        .expertise-list, .certificate-list, .contact-list, .skills-list, .language-list {
             list-style: none;
             padding: 0;
         }
-        .expertise-list li, .certificate-list li {
+        .expertise-list li, .certificate-list li, .contact-list li, .skills-list li, .language-list li {
             background-color: #f9f9f9;
             margin: 5px 0;
             padding: 10px;
             border-left: 5px solid #003366;
         }
+        .contact, .skills, .languages, .education, .work-experience {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>S A I K R I S H N A K</h1>
+        <h1>SAI KRISHNA K</h1>
         <h2>DevOps Engineer</h2>
+
+        <div class="section contact dynamic-effect">
+            <h3 class="section-title">Contact</h3>
+            <ul class="contact-list">
+                <li>Phone: +91 9705053563</li>
+                <li>Email: saikrishnajaya1997@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/sai-krishna-8b2948219/" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://medium.com/@saikrishnajaya1997" target="_blank">Medium Blogs</a></li>
+            </ul>
+        </div>
+
+        <div class="section skills dynamic-effect">
+            <h3 class="section-title">Skills</h3>
+            <ul class="skills-list">
+                <li>Shell Scripting</li>
+                <li>Kubernetes</li>
+                <li>Helm</li>
+                <li>GitHub</li>
+                <li>AWS</li>
+            </ul>
+        </div>
+
+        <div class="section work-experience dynamic-effect">
+            <h3 class="section-title">Work Experience</h3>
+            <ul class="expertise-list">
+                <li>
+                    <strong>DevOps Engineer</strong> at Zelarsoft Pvt. Ltd.
+                    <br>Dec 2021 - Feb 2024
+                    <br>Worked on creating an AKS cluster through Terraform code.
+                    <br>Created Azure NetApp Files and attached them to the AKS cluster.
+                    <br>Worked on deploying WordPress application with MySQL server.
+                    <br>Configured monitoring Grafana dashboards, Loki, and Prometheus for the workload.
+                    <br>Worked on configuring backup to the cluster with the Velero Backup tool.
+                    <br>Stored the backup in the Azure Blob storage for further use.
+                </li>
+                <li>
+                    <strong>DevOps Engineer</strong> at Tanla Platform Limited
+                    <br>Feb 2024 - Now
+                </li>
+            </ul>
+        </div>
+
+        <div class="section education dynamic-effect">
+            <h3 class="section-title">Education</h3>
+            <p>B.Tech from Indira Institute Of Technology and Sciences, 2016-2020</p>
+        </div>
+
+        <div class="section languages dynamic-effect">
+            <h3 class="section-title">Languages</h3>
+            <ul class="language-list">
+                <li>English</li>
+                <li>Telugu</li>
+            </ul>
+        </div>
 
         <div class="section dynamic-effect">
             <h3 class="section-title">Projects</h3>
@@ -77,10 +134,10 @@
                 <div class="role">Role: DevOps Engineer</div>
                 <div class="tool-set">Tool Set: AWS (EC2, VPC, ELB, EBS, IAM, Auto Scaling, Security Groups, SSO, SSM, SFTP server, Lambda, Cloud watch, and Billing), Tomcat</div>
                 <ul class="expertise-list">
-                    <li>Worked on Creating a new organization account and a private network In VPC (AWS)</li>
-                    <li>Worked on Creating EC2 Instance, and deployed Tomcat application</li>
-                    <li>Created Permission sets for Users.</li>
-                    <li>Worked on enabling SSO service and Creating SSO Users. And added them to the permission set</li>
+                    <li>Worked on creating a new organization account and a private network in VPC (AWS)</li>
+                    <li>Worked on creating EC2 instances and deployed Tomcat application</li>
+                    <li>Created permission sets for users.</li>
+                    <li>Worked on enabling SSO service and creating SSO users and added them to the permission set</li>
                 </ul>
             </div>
             <div class="project">
@@ -92,13 +149,13 @@
                     <li>Created SSM service for connecting to EC2 instances without a password by adding necessary roles to the instances.</li>
                     <li>Worked on backup of EC2 instances through SSM</li>
                     <li>Worked on Lambda function for starting and stopping instances</li>
-                    <li>Created triggers using Cloud Watch and Configured Lambda functions in Events.</li>
+                    <li>Created triggers using Cloud Watch and configured Lambda functions in events.</li>
                     <li>Configured SSO in the local machine and connected the local machine with EC2 using SSM</li>
                     <li>Also connected the local machine with RDS using SSM and IAM</li>
                     <li>Configured SFTP server in the organization account and enabled user automatic login and connected SFTP user without password</li>
                     <li>Worked on connecting IAM through RDP</li>
-                    <li>Worked on Implementing fleet manager.</li>
-                    <li>Worked on analyzing and inspecting the Billing variations and other billing issues on the client organization account (QA and Production).</li>
+                    <li>Worked on implementing fleet manager.</li>
+                    <li>Worked on analyzing and inspecting the billing variations and other billing issues on the client organization account (QA and Production).</li>
                     <li>Worked on configuring Cloud-watch agent to collect logs of the server and push them to the Cloudwatch for client accounts (QA and Production)</li>
                     <li>Also worked on automating the renewal of “letsencrypt” SSL certificates.</li>
                     <li>Established Kubernetes (K8s) clusters utilizing kubeadm, ensuring efficient setup and configuration.</li>
@@ -112,51 +169,11 @@
             </div>
         </div>
 
-        <div class="section dynamic-effect">
+        <div class="section certificates dynamic-effect">
             <h3 class="section-title">Certificates</h3>
             <ul class="certificate-list">
                 <li>CKA - Certified Kubernetes Administrator</li>
-                <li>Prometheus Loki</li>
-                <li>Azure DevOps</li>
-                <li>Docker</li>
-                <li>ArgoCD</li>
-                <li>GitLab</li>
-                <li>Azure</li>
-                <li>Grafana</li>
-                <li>Velero</li>
-                <li>Jenkins Maven</li>
             </ul>
-        </div>
-
-        <div class="section dynamic-effect">
-            <h3 class="section-title">Expertise</h3>
-            <div class="expertise">
-                <ul class="expertise-list">
-                    <li>Having 2+ years of experience in DevOps methodologies and setting up and maintaining CI & CD pipelines and delivering releases for multiple applications running on Linux-based distributed Infrastructure.</li>
-                    <li>Hands-on experience with Distributed Version Control tools like GitHub, and GitLab.</li>
-                    <li>Expertise in using build tools like Maven for the building of deployable Artifacts such as War & Ear from source code.</li>
-                    <li>Creating new Build Jobs, Plugins installation and management, setting up master/slaves using Jenkins.</li>
-                    <li>Good experience in CI (Continuous integration) and CD (Continuous Deployment) methodologies.</li>
-                    <li>Expertise in Dockerfile, creating Docker images, and configuring Docker containers.</li>
-                    <li>Experience in creating clusters and deploying workloads using Helm in Kubernetes.</li>
-                    <li>Good experience in using Tomcat application servers for deployments.</li>
-                    <li>Hands-on experiences in the AWS cloud such as creating EC2, VPC, ELB, EBS, IAM, Auto Scaling, Security Groups, S3, RDS, Route 53, SSO, SSM, SFTP server, Lambda, Cloud watch, and Billing.</li>
-                    <li>Creating/Managing Snapshots and Volumes, Upgrade, Downgrade AWS resources (CPU, Memory, and EBS).</li>
-                    <li>Hands-on experience in the Azure cloud such as creating AKS, Storage accounts, Resource groups, Blob containers, Azure NetApp Files, and Application Gateway.</li>
-                    <li>Hands-on experience in the Google Cloud such as creating GKE, IAM, GCR, GCE.</li>
-                    <li>Deploying the Java applications into Web application servers like Apache Tomcat.</li>
-                    <li>Experience with DevOps tools like Kubernetes, Docker, ArgoCD, Tekton CI/CD, GitLab CI/CD, Helm, and Devtron CI/CD.</li>
-                    <li>Experience in backup and restore tools like Velero and Kasten.</li>
-                    <li>Good knowledge of creating infrastructure and deploying workloads using Terraform.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section dynamic-effect">
-            <h3 class="section-title">Work Experience</h3>
-            <div class="expertise">
-                <p>DevOps Engineer at Tanla Platform Limited - Feb 2024 - Now</p>
-            </div>
         </div>
     </div>
 </body>
